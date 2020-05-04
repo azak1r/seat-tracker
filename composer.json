@@ -1,0 +1,28 @@
+{
+    "name": "azak1r/tracker",
+    "description": "Extend Eveseat functionality by adding a industry project tracker",
+    "authors": [
+        {
+            "name": "Joery Pigmans",
+            "email": "joery.pigmans@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Azak1r\\Tracker\\": "src/"
+        }
+    },
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.5.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azak1r\\Tracker\\TrackerServiceProvider"
+            ]
+        }
+    }
+}
