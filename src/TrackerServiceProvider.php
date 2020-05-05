@@ -65,7 +65,11 @@ class TrackerServiceProvider extends AbstractSeatPlugin
 
         // Include this packages menu items
         $this->mergeConfigFrom(
-            __DIR__ . '/Config/tracker.sidebar.php', 'tracker.sidebar');
+            __DIR__ . '/Config/tracker.sidebar.php', 'package.sidebar');
+
+        // Include this package permissions
+        $this->mergeConfigFrom(
+            __DIR__ . '/Config/tracker.permission.php', 'web.permissions');
     }
 
     /**
@@ -95,7 +99,7 @@ class TrackerServiceProvider extends AbstractSeatPlugin
      */
     public function getPackageRepositoryUrl(): string
     {
-        return '';
+        return 'https://packagist.org/packages/azak1r/tracker';
     }
 
     /**

@@ -1,0 +1,1 @@
+@extends('web::layouts.grids.4-4-4')

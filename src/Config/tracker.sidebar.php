@@ -1,16 +1,19 @@
 <?php
 
 return [
-    'seattracker' => [
-        'name'          => ' SeAT Tracker',
+    'tracker' => [
+        'name'          => 'Project Tracker',
         'icon'          => 'fa-tasks',
-        'route_segmant' => 'seattracker',
-        'permission'    => 'seattracker.view',
-        'entries' => [
-            'name'          => 'Projects',
-            'icon'          => 'fa-project-diagram',
-            'route'         => 'seattracker.index',
-            'permission'    => 'seattracker.view',
+        'route_segment' => 'tracker',
+        'permission'    => 'tracker.view',
+        'entries'       => [
+            'Show Projects' => [
+                'name'          => 'Projects',
+                'icon'          => 'fa-project-diagram',
+                'route_segment' => 'tracker',
+                'route'         => 'tracker.index',
+                'permission'    => 'tracker.view',
+            ],
         ],
     ],
 ];

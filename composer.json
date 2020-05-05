@@ -1,6 +1,7 @@
 {
     "name": "azak1r/tracker",
     "description": "Extend Eveseat functionality by adding a industry project tracker",
+    "type": "seat-plugin",
     "authors": [
         {
             "name": "Joery Pigmans",
