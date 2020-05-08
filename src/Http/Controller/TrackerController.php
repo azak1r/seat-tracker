@@ -9,6 +9,8 @@ class TrackerController
 {
     public function getProjectsView()
     {
-        return view('tracker::index');
+        $projects = [];
+
+        return view('tracker::index', compact('projects'));
     }
 }

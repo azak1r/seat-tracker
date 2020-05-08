@@ -2,7 +2,7 @@
 
 return [
     'tracker' => [
-        'name'          => 'Project Tracker',
+        'name'          => 'Project Tracker (WIP)',
         'icon'          => 'fa-tasks',
         'route_segment' => 'tracker',
         'permission'    => 'tracker.view',
